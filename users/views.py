@@ -15,10 +15,9 @@ class CustomLoginView(TokenObtainPairView):
 class MyView(APIView):
     @extend_schema(responses={200: StandardResponseSerializer})
     def get(self, request):
-        data = standard_response(
+        return standard_response(
             success=True,
             message="This is a GET request",
             data={"key": "value"},
             status_code=status.HTTP_200_OK,
         )
-        return Response(data, status=status.HTTP_200_OK)
