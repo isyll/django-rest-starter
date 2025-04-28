@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.log
+
+# Virtual Environment
+venv/
+env/
+*.venv
+
+# Django
+*.sqlite3
+db.sqlite3
+staticfiles/
+media/
+secure_files/static/
+
+# Migrations
+*/migrations/*.pyc
+*/migrations/__pycache__/
+*/migrations/*.py
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Secrets
+.env
